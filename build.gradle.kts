@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.9.0"
+    application
 }
 
 group = "org.krewie"
@@ -23,6 +24,10 @@ tasks.test {
     useJUnitPlatform()
 }
 
+application {
+    mainClass.set("org.krewie.bookScraper.BookScraperKt")
+}
+
 kotlin {
-    jvmToolchain(8)
+    jvmToolchain(17)
 }

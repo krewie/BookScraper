@@ -22,3 +22,12 @@ copy of the cache. Some third party libraries has been used to display progress,
 
 ## How to build and run
 
+Build:
+
+./gradlew build
+
+Run:
+
+./gradlew run
+
+Output: saved to the destinationDir defined in the config file.
