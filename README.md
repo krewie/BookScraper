@@ -5,10 +5,10 @@ and storing it locally.
 
 This project contains a config.properties file that allows you to configure parameters such as:
 
-maxConcurrentJobs = max number of coroutines allowed to run in paralell.
-maxDepth = maximum traversal depth of the recursive webscraper.
-rootUrl = the targeted website.
-destinationDir = where the output of the page is targeted.
+* maxConcurrentJobs = max number of coroutines allowed to run in paralell.
+* maxDepth = maximum traversal depth of the recursive webscraper.
+* rootUrl = the targeted website.
+* destinationDir = where the output of the page is targeted.
 
 The webscraper is recursive by nature with a maximum depth defined in the config file, 
 to allow some sort of efficiency i have decided to implement this with kotlin coroutines for the depth traversal
@@ -23,11 +23,11 @@ copy of the cache. Some third party libraries has been used to display progress,
 ## How to build and run
 
 Build:
-
-./gradlew build
+    
+    ```./gradlew build```
 
 Run:
-
-./gradlew run
+    
+        ```./gradlew run```
 
 Output: saved to the destinationDir defined in the config file.
